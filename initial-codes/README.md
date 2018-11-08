@@ -1,0 +1,1 @@
+Folder contains initial code for KMC-Fake News projec.
