@@ -29,11 +29,11 @@ print("------------------------------B")
 lat.count(N, n)
 while source_counter < max_source:
     print("-----------------------------------BEFORE")
-    upd.update_lattice_equation(N, n, n_0, 1, decay_const)
-    source_counter = lat.count_source(N, n)
+    upd.update_lattice_equation(N, n, n_0, 1, decay_const)  # updates lattice
     print("-----------------------------------AFTER")
+    source_counter = lat.count_source(N, n)  # counts the source population of the lattice
     print("Step: ", tm)
-    lat.count(N, n)
+    # lat.count(N, n)
     print(source_counter, max_source, tm)
     tm += 1
 np.savetxt("Final Population.csv", N, delimiter = ",")
